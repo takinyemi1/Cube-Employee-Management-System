@@ -1,0 +1,25 @@
+npm create vite@latest
+
+Project Name: ...
+Select a framework: React
+Select a variant: JavaScript
+
+Now run:
+cd frontend
+npm install
+npm install react-data-table-component styled-components axios
+react-icons react-router-dom tailwindcss postcss autoprefixer
+npm run dev
+
+create folder inside that folder
+
+npm init -y
+npm install bcrypt cors express jsonwebtoken mongoose multer nodemon path
+
+create index.js file
+
+add to package .json
+type module
+start nodemon --env-file=.env index.js
+
+create .env file
