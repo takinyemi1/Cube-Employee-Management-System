@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema ({
     }, password: {
         type: String, required: true
     }, role: {
-        type: String, enum: ["admin", "employed"], required: true 
+        type: String, enum: ["admin", "employee"], required: true 
     }, profileImage: {
         type: String
     }, createdAt: {
@@ -18,5 +18,6 @@ const userSchema = new mongoose.Schema ({
     }
 })
 
-const user = mongoose.model("user", userSchema)
-export default user
+const userModel = mongoose.model("user", userSchema)
+export default userModel
+// module.exports = userModel

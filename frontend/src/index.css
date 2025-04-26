@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis'), url(./fonts/Dosis/Dosis-VariableFont_wght.ttf) format('truetype');
+}
+
+/* @font-face {
+    font-family: 'Abril';
+    src: url('Abril'), url(./fonts/Abril_Fatface/AbrilFatface-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('Inconsolata'), url(./fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'KarlaIt';
+    src: url('KarlaIt'), url(./fonts/Karla/Karla-Italic-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'KarlaReg';
+    src: url('KarlaReg'), url(./fonts/Karla/Karla-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'ZenLoop';
+    src: url('ZenLoop'), url(./fonts/Zen_Loop/ZenLoop-Regular.ttf) format('truetype');
+} */

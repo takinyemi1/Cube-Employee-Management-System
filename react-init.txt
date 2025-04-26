@@ -23,3 +23,5 @@ type module
 start nodemon --env-file=.env index.js
 
 create .env file
+
+bootstrap: npm install react-bootstrap bootstrap
