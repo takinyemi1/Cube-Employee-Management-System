@@ -3,12 +3,8 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { useAuth } from "../context/authContext";
 
-const AdminDashboard = () => {
-    const {user, loading} = useAuth();
-
-    // center and make larger (loading...)
+const EmployeeDashboard = () => {
 
     const backgroundStyle = {
         backgroundColor: "#2748a5",
@@ -21,8 +17,8 @@ const AdminDashboard = () => {
     }
 
     return (
-        <div style={backgroundStyle}>Admin Dashboard {user && user.name}</div>
+        <div style={backgroundStyle}>Employee Dashboard</div>
     )
 }
 
-export default AdminDashboard
+export default EmployeeDashboard
