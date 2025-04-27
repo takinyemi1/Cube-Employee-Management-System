@@ -18,11 +18,6 @@
 }
 
 @font-face {
-    font-family: 'KarlaIt';
-    src: url('KarlaIt'), url(./fonts/Karla/Karla-Italic-VariableFont_wght.ttf) format('truetype');
-}
-
-@font-face {
     font-family: 'KarlaReg';
     src: url('KarlaReg'), url(./fonts/Karla/Karla-VariableFont_wght.ttf) format('truetype');
 }
@@ -31,3 +26,8 @@
     font-family: 'ZenLoop';
     src: url('ZenLoop'), url(./fonts/Zen_Loop/ZenLoop-Regular.ttf) format('truetype');
 } */
+
+@font-face {
+    font-family: 'Karla-Italic';
+    src: url('Karla-Italic'), url(./fonts/Karla/Karla-Italic-VariableFont_wght.ttf) format('truetype');
+}

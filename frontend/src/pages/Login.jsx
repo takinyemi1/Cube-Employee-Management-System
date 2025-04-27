@@ -78,7 +78,7 @@ const Login = () => {
                                             <Form onSubmit={handleSubmit}>
                                                 {/* logo */}
                                                 <div className="d-flex align-items-center mb-3 pb-1">
-                                                    <i className="bi bi-boxes fa-2x me-3" style={{color: "#8bc527"}}></i>
+                                                    <a href="/"><i className="bi bi-boxes fa-2x me-3" style={{color: "#8bc527"}}></i></a>
                                                     <span className="h1 fw-bold mb-0">Logo</span>
                                                 </div>
                                                 <h2 className="fw-normal mb-3 pb-3" style={{letterSpacing: "1px"}}>Sign into your account</h2>

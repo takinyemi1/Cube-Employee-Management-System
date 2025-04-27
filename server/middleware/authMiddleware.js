@@ -4,7 +4,7 @@ import User from '../models/user.js'
 // verify the user
 const verifyUser = async (req, res, next) => {
     try {
-        const token = req.header.authorization.split(' ')[1];
+        const token = req.headers.authorization.split(' ')[1];
 
         if (!token) {
             return res.status(404).json({
@@ -13,7 +13,7 @@ const verifyUser = async (req, res, next) => {
             })
         }
 
-        const decoded = await jwt.verify(
+        const decoded = jwt.verify(
             token,
             process.env.JWT_KEY
         )
@@ -37,6 +37,7 @@ const verifyUser = async (req, res, next) => {
 
         req.user = user
         next()
+
     } catch(error) {
         // check the token -> pass from frontend
         return res.status(500).json({
