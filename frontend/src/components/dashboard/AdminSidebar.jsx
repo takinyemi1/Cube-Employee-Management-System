@@ -9,11 +9,11 @@ const AdminSidebar = () => {
     }
 
     return (
-        <div className="bg-800 text-white h-screen fixed left-0 top-0 bottom-0 space-y-2 w-64" style={{ backgroundColor: "#142566" }}>
-            <div className="bg-600 h-12 flex items-center text-center justify-center" style={{fontFamily: "Dosis", backgroundColor: "#123999"}}>
+        <div className="text-white h-screen fixed left-0 top-0 bottom-0 space-y-2 w-64" style={{ backgroundColor: "#142566" }}>
+            <div className="h-12 flex items-center text-center justify-center" style={{fontFamily: "Dosis", backgroundColor: "#123999"}}>
                 {/* navbar title */}
                 <a className="text-white font-bold text-decoration-none text-large text-center" href="/">
-                    Employee Management System
+                    Cube Employee Management System
                 </a>
             </div>
             <div className="px-4" style={{fontFamily: "Dosis"}}>

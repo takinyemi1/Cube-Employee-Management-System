@@ -8,9 +8,9 @@ const Navbar = () => {
     const {user} = useAuth()
 
     return (
-        <div className="flex items-center text-white justify-between h-12 bg-300 px-5" style={{fontFamily: "Dosis", backgroundColor: "#123999"}}>
-            <p className="font-bold">Welcome, {user.name}</p>
-            <Button className="btn btn-outline-primary px-4 py-1 bg-700" style={{backgroundColor: "#73d66c"}}>Logout</Button>
+        <div className="flex items-center justify-between h-12 px-6 text-white" style={{fontFamily: "Dosis", backgroundColor: "#123999"}}>
+            <p className="font-bold m-0">Welcome, {user.name}</p>
+            <Button className="btn btn-outline-primary px-4 py-1" style={{backgroundColor: "#73d66c"}}>Logout</Button>
         </div>
     )
 }

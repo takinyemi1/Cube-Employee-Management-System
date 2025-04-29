@@ -60,15 +60,15 @@ const Login = () => {
 
     return (
         <div className = "flex flex-col items-center text-black justify-center" style = {backgroundStyle}>
-            <div className="mb-3"></div>
-            <h2 className="text-white"><b>Employee Management System</b></h2>
+            {/* <div className="mb-3"></div> */}
+            {/* <h2 className="text-white"><b>Employee Management System</b></h2> */}
             <div className="container py-5 h-50">
                 <div className="row d-flex justify-content-center align-items-center h-100">
                     <div className="col col-xl-10">
                         <div className="card" style={{borderRadius: "1rem"}}>
                             <div className="row g-0">
                                 <div className="col-md-6 col-lg-5 d-none d-md-block">
-                                    <img src="" className="img-fluid" style={{borderRadius: "1rem 0 0 1rem"}}></img>
+                                    <img src="../assets/cubes-logo.gif" className="img-fluid" style={{borderRadius: "1rem 0 0 1rem"}}></img>
                                 </div>
 
                                 <div className="col-md-6 col-lg-7 d-flex align-items-center position-relative">
@@ -79,7 +79,7 @@ const Login = () => {
                                                 {/* logo */}
                                                 <div className="d-flex align-items-center mb-3 pb-1">
                                                     <a href="/"><i className="bi bi-boxes fa-2x me-3" style={{color: "#8bc527"}}></i></a>
-                                                    <span className="h1 fw-bold mb-0">Logo</span>
+                                                    <span className="h1 fw-bold mb-0">Cube Employee Management System</span>
                                                 </div>
                                                 <h2 className="fw-normal mb-3 pb-3" style={{letterSpacing: "1px"}}>Sign into your account</h2>
                                                 

@@ -11,9 +11,12 @@ const RoleBaseRoutes = ({ children, requiredRole }) => {
 
     if (loading) {
         // center and make larger (loading...)
-        return <div className='text-black'>
-            <i className='bi bi-arrow-clockwise fa-2x' style={loadingStyle}></i>
-            Loading...
+        return <div className='text-black position-relative'>
+            {/* <i className='bi bi-arrow-clockwise fa-2x' style={loadingStyle}></i>
+            Loading... */}
+            <div className='position-absolute top-50 start-50 translate-middle spinner-border' role='status'>
+                <span className='sr-only'>Loading...</span>
+            </div>
         </div>
     }
 
