@@ -1,14 +1,13 @@
-# MERN-Stack-Employee-MS
+# Cube Employee Management System
 
-**Employee Management System** is a website application developed using the MERN Stack (MongoDB, Express.js, React, and Node.js). This application will allow a user to mark employees as present, absent, or sick, and view and edit their salary. 
-
-Time spent: **X** hours spent in total
+**Cube Employee Management System** is a website application developed using the MERN Stack (MongoDB, Express.js, React, and Node.js). This application allows a user to identify themselves as an administrator or an employee. If they are an administrator, they can mark employees as present, absent, or sick, and view and edit their salaries. As an employee, they can review each of those factors, but without the edit property.
 
 ## Features
 
-* [ ] Homepage, giving the user the option to sign in as the administrator, sign in as an employee, or create an account as an employee.
-* [ ] Button displayed on screen
-* [ ] Toast with message appears when button is pressed 
+- [x] **Login page allowing the user to log in as an employee**
+- User also has the option to sign up in the case of not having an account with Cube Employee Management yet.
+- [x] Website using MongoDB as the database to store user information.
+- Database tables include one for the departments, employees, and users.
 
 ## Video Walkthrough
 
