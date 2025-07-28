@@ -5,9 +5,9 @@
 ## Features
 
 - [x] **Login page allowing the user to log in as an employee**
-- User also has the option to sign up in the case of not having an account with Cube Employee Management yet.
+    - User also has the option to sign up in the case of not having an account with Cube Employee Management yet.
 - [x] Website using MongoDB as the database to store user information.
-- Database tables include one for the departments, employees, and users.
+    - Database tables include one for the departments, employees, and users.
 
 ## Video Walkthrough
 
