@@ -24,7 +24,9 @@ const AdminSidebar = () => {
                     <i className="bi bi-speedometer me-3" style={iconStyle}></i>
                     <span>Dashboard</span>
                 </NavLink>
-                <NavLink to="/employee-dashboard" className="text-white flex items-center space-x-4 block py-2.5 px-4 rounded no-underline">
+                <NavLink to="/admin-dashboard/employees"
+                    className={({ isActive }) => `${isActive ? "bg-blue-500" : " "} text-white flex items-center space-x-4 block py-2.5 px-4 rounded no-underline`}
+                    end>
                     <i className="bi bi-person-fill me-3" style={iconStyle}></i>
                     <span>Employee</span>
                 </NavLink>

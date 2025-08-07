@@ -25,3 +25,7 @@ start nodemon --env-file=.env index.js
 create .env file
 
 bootstrap: npm install react-bootstrap bootstrap
+
+npm start index.js
+
+react init shortcut: rafce
