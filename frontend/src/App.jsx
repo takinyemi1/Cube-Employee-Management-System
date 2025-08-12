@@ -13,6 +13,8 @@ import List from './components/employee/List';
 import Add from './components/employee/Add';
 import View from './components/employee/View';
 import Edit from './components/employee/Edit';
+import Salary from './components/salary/Add';
+import ViewSalary from './components/salary/View';
 
 function App() {
 
@@ -33,14 +35,20 @@ function App() {
             {/* displays admin dashboard */}
             <Route index element={<AdminSummary />}></Route>
 
+            {/* Department */}
             <Route path='/admin-dashboard/departments' element={<DepartmentList />}></Route>
             <Route path='/admin-dashboard/add-department' element={<AddDepartment />}></Route>
             <Route path='/admin-dashboard/department/:id' element={<EditDepartment />}></Route>
             
+            {/* Employee */}
             <Route path='/admin-dashboard/employees' element={<List />}></Route>
             <Route path='/admin-dashboard/add-employee' element={<Add />}></Route>
             <Route path='/admin-dashboard/employees/:id' element={<View />}></Route>
             <Route path='/admin-dashboard/employees/edit/:id' element={<Edit />}></Route>
+            <Route path='/admin-dashboard/employees/salary/:id' element={<ViewSalary />}></Route>
+
+            {/* Salary */}
+            <Route path='/admin-dashboard/salary/add' element={<Salary />}></Route>
 
           </Route>
         <Route path='/employee-dashboard' element={<EmployeeDashboard />}></Route>

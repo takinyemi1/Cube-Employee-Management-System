@@ -39,7 +39,8 @@ const AdminSidebar = () => {
                     <i className="bi bi-calendar-event-fill me-3" style={iconStyle}></i>
                     <span>Time Off & Requests</span>
                 </NavLink>
-                <NavLink to="/employee-dashboard" className="text-white flex items-center space-x-4 block py-2.5 px-4 rounded no-underline">
+                <NavLink to="/admin-dashboard/salary/add" 
+                    className={({ isActive }) => `${isActive ? "bg-blue-500" : " "} text-white flex items-center space-x-4 block py-2.5 px-4 rounded no-underline`}>
                     <i className="bi bi-cash me-3" style={iconStyle}></i>
                     <span>Salary</span>
                 </NavLink>
