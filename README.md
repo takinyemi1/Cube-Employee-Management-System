@@ -13,7 +13,7 @@
     - Admin can view the total number of employees, departments, their monthly salary, as well as how many employees requested time off, had their request approved, and if their request is currently pending or was rejected.
 - [x] **Manage Employees**
     - Admin can view all of their employees.
-    - Can directly view their profiles, edit employee information, edit salary, or delete their employee profile.
+    - Can directly view their profiles, edit employee information, edit salary, or view their employee time off requests (approve/reject).
 - [x] **Manage Department**
     - Admin can view all departments.
     - Can add, edit, or delete departments.
