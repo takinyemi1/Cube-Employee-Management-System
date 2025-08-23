@@ -42,7 +42,7 @@ const verifyUser = async (req, res, next) => {
         // check the token -> pass from frontend
         return res.status(500).json({
             success: false, 
-            error: "Server Error"
+            error: "Server Error" + error
         }) 
     }
 }

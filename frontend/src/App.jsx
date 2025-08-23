@@ -15,6 +15,10 @@ import View from './components/employee/View';
 import Edit from './components/employee/Edit';
 import Salary from './components/salary/Add';
 import ViewSalary from './components/salary/View';
+import Summary from './EmployeeDashboard/Summary';
+import RequestList from './components/requests/List';
+import AddRequest from './components/requests/Add';
+import Settings from './EmployeeDashboard/Settings';
 
 function App() {
 
@@ -51,7 +55,26 @@ function App() {
             <Route path='/admin-dashboard/salary/add' element={<Salary />}></Route>
 
           </Route>
-        <Route path='/employee-dashboard' element={<EmployeeDashboard />}></Route>
+        <Route path='/employee-dashboard' 
+          element={
+            <PrivateRoutes>
+              <RoleBaseRoutes requiredRole={["admin", "employee"]}>
+                <EmployeeDashboard />
+              </RoleBaseRoutes>
+            </PrivateRoutes>
+          }>
+            <Route index element={<Summary />}></Route>
+
+            {/* Displays employee dashboard */}
+            <Route path='/employee-dashboard/profile/:id' element={<View />}></Route>
+
+            {/* Time Off & Requests */}
+            <Route path='/employee-dashboard/requests' element={<RequestList />}></Route>
+            <Route path='/employee-dashboard/add-request' element={<AddRequest />}></Route>
+            <Route path='/employee-dashboard/salary/:id' element={<ViewSalary />}></Route>
+            <Route path='/employee-dashboard/settings' element={<Settings />}></Route>
+
+        </Route>
       </Routes>
     </BrowserRouter>
   );

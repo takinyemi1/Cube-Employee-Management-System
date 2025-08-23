@@ -5,6 +5,8 @@ import authRouter from './routes/auth.js'
 import departmentRouter from './routes/department.js'
 import employeeRouter from './routes/employee.js'
 import salaryRouter from './routes/salary.js'
+import requestRouter from './routes/requests.js'
+import settingsRouter from './routes/settings.js'
 import dotenv from 'dotenv'
 import connectToDatabase from './db/db.js'
 
@@ -23,6 +25,8 @@ app.use('/api/auth', authRouter)
 app.use('/api/department', departmentRouter)
 app.use('/api/employee', employeeRouter)
 app.use('/api/salary', salaryRouter)
+app.use('/api/requests', requestRouter)
+app.use('/api/settings', settingsRouter)
 
 app.listen(process.env.PORT, () => {
     console.log(`Application is running on port ${process.env.PORT}`)
